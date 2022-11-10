@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h1>JavaScript Strings</h1>
+        <h2>MÉTODOS TOP!!!!!!</h2>
+
+        <p1>O tamanho desse string é:
+        </p1>
+        <p1 id="fofo"></p1>
+        <p>A parte extraída desse string é:</p>
+        <p id="demo"></p>
+        <p2>O método substring extrai uma parte de um string e retorna as partes extraídas em uma nova string:</br> </br>
+    </p2>
+    <p2 id="mary"></p2>
+    <p3>
+        <br>O método substr() extrai uma parte de uma string and returns the extracted
+            parts in a new string:</br>
+    </p3>
+    <p3 id="p3"></p3>
+    <p4>
+        <br>Agora vamos mudar o nome de um dos índios!</br>
+    </p4>
+</br>
+</br>
+<button onclick="myFunction()">MUDAR</button>
+</br>
+</br>
+<p4 id="p4">Potira, Iracema e Ibaporanga</p4>
+
+<script>
+let text = "Euestoucansadoenaoaguentomaisquerodormir";
+document
+.getElementById("fofo")
+.innerHTML = text.length;
+let part = text.slice(-10, -4);
+document
+.getElementById("demo")
+.innerHTML = part;
+let str = "Um, dois, três indiozinhos";
+document
+.getElementById("mary")
+.innerHTML = str
+.substring(0, 8)
+document
+.getElementById("p3")
+.innerHTML = str
+.substr(3, 11)
+function myFunction() {
+let text = document
+.getElementById("p4")
+.innerHTML;
+document
+.getElementById("p4")
+.innerHTML = text.replace("Potira", "Ubirajara");
+}
+</script>
+
+</body>
+</html>
