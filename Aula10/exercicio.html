@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IMC - ÍNDICE DE MASSA CORPORAL</title>
+    </head>
+    <body>
+        <h1>CALCULANDO O SEU IMC</h1>
+        <h2>Vamos calcular como está o seu Índice de Massa Corporal. Digite os dados a
+            seguir:</h2>
+
+<form action="/action_page.php">
+            <label for="Alt">Altura (em mts):
+            </label>
+            <br>
+                <input type="number" id="Alt" name="Alt" value=""></br>
+        </br>
+        <label for="Peso">Peso (em kg):
+        </label>
+        <br>
+            <input type="number" id="Peso" name="Peso" value="">
+        </br>
+    </br>
+</form>
+<button onclick="funcaoClique()">
+    Calcular
+</button>
+<script>
+    function funcaoClique(n1, n2) {
+        let rc1 = (n1 / (n2 * n2))
+    }
+    funcaoClique(Alt, Peso)
+</script>
+
+</body>
+</html>
